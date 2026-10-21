@@ -2,7 +2,7 @@ public class GammaFunction {
 
     private double gammaValue;
 
-    /** Gamma de un entero: Gamma(n) = (n - 1)! = 1 * 2 * 3 * ... * (n - 1). */
+    /** Gamma de un entero: Gamma(n) = (n - 1)! = 1 * 2 * 3 * ..... * (n - 1). */
     public double computeIntGamma(int intValue) {
         if (intValue < 1) {
             throw new IllegalArgumentException("El valor debe ser >= 1: " + intValue);
@@ -54,16 +54,3 @@ public class GammaFunction {
 
 
 
-/**
- * Funcion Gamma, calculada como en el ejemplo del kit.
- *
- * Reglas:
- *   Gamma(1)   = 1
- *   Gamma(1/2) = raiz(pi)
- *   Gamma(x)   = (x - 1) * Gamma(x - 1)
- *
- * Solo funciona con enteros (1, 2, 3...) y semienteros (0.5, 1.5, 2.5...),
- * que son los que aparecen en la distribucion t.
- *
- * Ejemplo: Gamma(9/2) = 7/2 * 5/2 * 3/2 * 1/2 * Gamma(1/2) = 11.63173
- */
