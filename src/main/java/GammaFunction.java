@@ -9,7 +9,7 @@ public class GammaFunction {
         }
         double result = 1;
         for (int i = 2; i <= intValue - 1; i++) {
-            result = result + i;
+            result = result * i;
         }
         gammaValue = result;
         return gammaValue;
